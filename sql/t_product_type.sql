@@ -1,0 +1,16 @@
+INSERT INTO `t_product_type` VALUES (1, '食品', 1);
+INSERT INTO `t_product_type` VALUES (2, '衣服', 0);
+INSERT INTO `t_product_type` VALUES (3, '数码', 1);
+INSERT INTO `t_product_type` VALUES (4, '生活用品', 1);
+INSERT INTO `t_product_type` VALUES (5, '家装', 0);
+INSERT INTO `t_product_type` VALUES (6, '旅游', 1);
+INSERT INTO `t_product_type` VALUES (7, '电器', 1);
+INSERT INTO `t_product_type` VALUES (8, '运动', 1);
+INSERT INTO `t_product_type` VALUES (9, '家具', 0);
+INSERT INTO `t_product_type` VALUES (10, '配饰', 1);
+INSERT INTO `t_product_type` VALUES (11, '裤子', 1);
+INSERT INTO `t_product_type` VALUES (12, '包包', 1);
+INSERT INTO `t_product_type` VALUES (13, '鞋子', 0);
+INSERT INTO `t_product_type` VALUES (14, '内衣', 1);
+INSERT INTO `t_product_type` VALUES (15, '裙子', 0);
+INSERT INTO `t_product_type` VALUES (16, '科技', 1);
