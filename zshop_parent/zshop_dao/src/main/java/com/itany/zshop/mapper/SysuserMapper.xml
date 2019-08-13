@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itany.zshop.dao.SysuserDao">
+    <select id="selectAll" resultType="sysuser">
+        select id,name,login_name,password,phone
+        from t_sysuser
+    </select>
+
+    <select id="selectLogin" resultType="sysuser" parameterType="sysuser">
+        select login_name,password
+        from t_sysuser where login_name=#{login_name} and password=#{password}
+    </select>
+</mapper>

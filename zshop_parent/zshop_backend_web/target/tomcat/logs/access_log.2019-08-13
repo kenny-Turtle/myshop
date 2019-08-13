@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:43:48 +0800] "GET / HTTP/1.1" 200 127 http-bio-8004-exec-1 919
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:43:49 +0800] "GET /showLogin HTTP/1.1" 200 1873 http-bio-8004-exec-2 134
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:43:56 +0800] "GET /showLogin HTTP/1.1" 200 1873 http-bio-8004-exec-3 6
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:45:15 +0800] "GET /backend/customer/jump HTTP/1.1" 200 1894 http-bio-8004-exec-5 110
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:45:25 +0800] "GET /backend/customer/jump HTTP/1.1" 200 1894 http-bio-8004-exec-6 5
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:46:17 +0800] "GET /backend/customer/jump HTTP/1.1" 200 1894 http-bio-8004-exec-7 3
+0:0:0:0:0:0:0:1 - - [13/Aug/2019:13:46:32 +0800] "POST /backend/customer/regist HTTP/1.1" 200 115 http-bio-8004-exec-8 764

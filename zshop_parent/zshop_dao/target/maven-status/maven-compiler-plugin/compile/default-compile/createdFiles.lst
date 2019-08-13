@@ -1,0 +1,4 @@
+com\itany\zshop\dao\ProductDao.class
+com\itany\zshop\dao\ProductTypeDao.class
+com\itany\zshop\dao\CustomerDao.class
+com\itany\zshop\dao\SysuserDao.class
