@@ -28,7 +28,7 @@
         whiere name=#{name}
     </select>
 
-    <insert id="insert">
+    <insert id="insert" parameterType="productType">
         insert into t_product_type
             (name,status)
             values

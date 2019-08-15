@@ -9,7 +9,7 @@
     </select>
 
     <insert id="insertCus" parameterType="customer">
-        insert into t_customer(name,login_name,password)
-        values(#{realname},#{registname},#{password})
+        insert into t_customer(name,login_name,password,phone)
+        values(#{realname},#{registname},#{password},#{phone})
     </insert>
 </mapper>

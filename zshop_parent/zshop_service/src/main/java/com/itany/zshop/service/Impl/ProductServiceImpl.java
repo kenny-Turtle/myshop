@@ -26,4 +26,10 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> findAll() {
         return productDao.selectAll();
     }
+
+    public void addOne(String pid, String pname, double price) {
+        productDao.insertOne(pid,pname,price);
+    }
+
+
 }

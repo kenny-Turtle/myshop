@@ -55,7 +55,7 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Regist</button>
+                <button type="submit" class="btn btn-default" onclick="location.reload()">Regist</button>
             </div>
         </div>
     </form>

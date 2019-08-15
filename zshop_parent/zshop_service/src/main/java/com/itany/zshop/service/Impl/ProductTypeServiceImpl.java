@@ -44,7 +44,6 @@ public class ProductTypeServiceImpl implements ProductTypeService {
             throw new ProductTypeExistException("商品已存在");
         }
         productTypeDao.insert(name, ProductTypeConstant.PRODUCT_TYPE_ENABLE);
-
     }
 
 
