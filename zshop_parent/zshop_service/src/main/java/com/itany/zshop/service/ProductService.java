@@ -10,4 +10,9 @@ import java.util.List;
  */
 public interface ProductService {
     public List<Product> findAll();
+
+    public void addOne(String pid,String pname,double price);
+
 }
+
+

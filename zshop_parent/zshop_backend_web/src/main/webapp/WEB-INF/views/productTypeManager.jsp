@@ -7,10 +7,79 @@
     <link href="http://cdn.bootcss.com/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="https://cdn.bootcss.com/flat-ui/2.3.0/css/flat-ui.min.css" rel="stylesheet">
 </head>
+
+<style>
+    .black_overlay{
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=88);
+    }
+    .white_content {
+        display: none;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        width: 55%;
+        height: 55%;
+        padding: 20px;
+        border: 10px solid orange;
+        background-color: white;
+        z-index:1002;
+        overflow: auto;
+    }
+</style>
+
 <body>
+
+
+
+
 <h2>商品类型管理界面</h2>
 <div class="panel-body">
-    <input type="button" value="添加商品类型"/>
+
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';
+document.getElementById('fade').style.display='block'">添加商品类型
+        </a>
+
+    <div id="light" class="white_content">添加商品类型
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';
+            document.getElementById('fade').style.display='none'">点这里关闭本窗口
+        </a>
+
+        <form class="form-horizontal"method="post"  action="${pageContext.request.contextPath}/backend/productType/add">
+
+
+            <div class="form-group"  >
+                <label for="inputEmail4" class="col-sm-2 control-label">商品类型名称：</label>
+                <div class="col-sm-10">
+                    <input type="text"  id="inputEmail4" placeholder="Name" name="name">
+                </div>
+            </div>
+
+            <%--<input type="radio" name="status" value="1"
+                   checked="checked" />启用&nbsp;&nbsp;
+            <input type="radio" name="status" value="0" />禁用--%>
+
+
+            <div class="form-group" >
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">添加</button>
+                </div>
+            </div>
+        </form>
+
+
+
+    </div>
+    <div id="fade" class="black_overlay"></div>
     <br>
     <br>
     <div class="show-list">

@@ -33,7 +33,7 @@ public class CustomerController {
         return "regist";
     }
     @RequestMapping("/regist")
-    public String regist(HttpServletRequest req, HttpServletResponse resp){
+    public void regist(HttpServletRequest req, HttpServletResponse resp){
 
         //注册操作
         String realname=req.getParameter("realname");
@@ -44,7 +44,6 @@ public class CustomerController {
         System.out.println(realname+registname+password);
         customerService.addCus(realname,registname,password,phone);
 
-        return "mainfont";
     }
 
 

@@ -5,7 +5,7 @@
 <mapper namespace="com.itany.zshop.dao.ProductDao">
 
 <!--    结果集的映射-->
-    <resultMap id="productMapper" type="product">
+    <!--<resultMap id="productMapper" type="product">
         <id property="id" column="pid"/>
         <result property="name" column="pname"/>
         <result property="price" column="price"/>
@@ -13,14 +13,25 @@
             <id property="id" column="id"/>
             <result property="name" column="name"/>
         </association>
-    </resultMap>
+    </resultMap>-->
 
-    <select id="selectAll" resultType="productMapper">
-#         select pid,pname,price,name
-#         from t_product join t_product_type
-#         on t_product.product_type_id=t_product_type.id
-          select p.pid,p.pname,p.price,pt.name
+    <select id="selectAll" resultType="product">
+
+          /*select p.pid,p.pname,p.price,pt.name
           from t_product p left join t_product_type pt
-            on p.product_type_id=pt.id
+            on p.product_type_id=pt.id*/
+            select pid,pname,price,product_type_id
+            from t_product
     </select>
+
+    <insert id="insertOne" parameterType="product">
+        insert into t_product(pid,pname,price)
+        values(#{pid},#{pname},#{price})
+    </insert>
+
+
+
+
+
+
 </mapper>

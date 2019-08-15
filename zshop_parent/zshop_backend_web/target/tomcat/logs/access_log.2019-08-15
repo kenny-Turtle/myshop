@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [15/Aug/2019:09:22:11 +0800] "GET / HTTP/1.1" 200 127 http-bio-8004-exec-1 1166
+0:0:0:0:0:0:0:1 - - [15/Aug/2019:09:22:11 +0800] "GET /showLogin HTTP/1.1" 200 1873 http-bio-8004-exec-2 159
+0:0:0:0:0:0:0:1 - - [15/Aug/2019:09:22:21 +0800] "POST /backend/sysuser/login HTTP/1.1" 200 2993 http-bio-8004-exec-3 1126
+0:0:0:0:0:0:0:1 - - [15/Aug/2019:09:22:24 +0800] "GET /backend/product/findAll HTTP/1.1" 200 5921 http-bio-8004-exec-4 485
+0:0:0:0:0:0:0:1 - - [15/Aug/2019:09:22:48 +0800] "POST /backend/product/add HTTP/1.1" 404 1025 http-bio-8004-exec-5 29
+0:0:0:0:0:0:0:1 - - [15/Aug/2019:09:22:48 +0800] "GET /backend/product/findAll HTTP/1.1" 200 6327 http-bio-8004-exec-6 34
