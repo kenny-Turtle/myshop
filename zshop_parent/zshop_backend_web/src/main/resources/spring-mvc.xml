@@ -20,6 +20,7 @@
 
     <!--直接访问jsp页面-->
     <mvc:view-controller path="showLogin" view-name="login"/>
+    <mvc:view-controller path="test" view-name="main"/>
 
 
 </beans>

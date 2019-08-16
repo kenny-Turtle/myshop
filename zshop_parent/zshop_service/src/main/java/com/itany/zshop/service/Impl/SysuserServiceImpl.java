@@ -26,8 +26,16 @@ public class SysuserServiceImpl implements SysuserService {
     public Sysuser findLogin(String login_name,String password) {
         return sysuserDao.selectLogin(login_name,password);
     }
-
+    @Transactional(propagation = Propagation.SUPPORTS,readOnly = true)
     public List<Sysuser> findAll() {
         return sysuserDao.selectAll();
     }
+
+    public void addOne(String name, String login_name, String password, String phone, String email) {
+        sysuserDao.insertOne(name,login_name,password,phone,email);
+    }
+
+
+
+
 }

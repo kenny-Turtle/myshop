@@ -66,7 +66,7 @@
         <ul>
             <li><a href="${pageContext.request.contextPath}/backend/productType/findAll"> 商品类型管理</a></li>
             <li><a href="${pageContext.request.contextPath}/backend/product/findAll"> 商品管理</a></li>
-            <li>管理员管理</li>
+            <li><a href="${pageContext.request.contextPath}/backend/sysuser/findAll"> 管理员管理</a></li>
             <li><a href="${pageContext.request.contextPath}/backend/customer/findAll"> 客户管理</a></li>
         </ul>
     </div><!-- left部分是菜单栏 -->
