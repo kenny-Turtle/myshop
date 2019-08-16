@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author zfj
@@ -37,8 +38,29 @@ public class SysuserController {
             return "login";
         }
 
+    }
 
+    @RequestMapping("/findAll")
+    public String findAll(Map map){
+        List<Sysuser> sysusers = sysuserService.findAll();
+        map.put("sysusers",sysusers);
+
+        return "sysuserManager";
+    }
+
+    @RequestMapping("/add")
+    public void addOne(HttpServletRequest req){
+        String name=req.getParameter("name");
+        String login_name=req.getParameter("login_name");
+        String password=req.getParameter("password");
+        String phone=req.getParameter("phone");
+        String email=req.getParameter("email");
+        sysuserService.addOne(name,login_name,password,phone,email);
 
     }
+
+
+
+
 
 }

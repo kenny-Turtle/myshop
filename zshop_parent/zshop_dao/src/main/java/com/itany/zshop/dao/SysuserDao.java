@@ -18,4 +18,10 @@ public interface SysuserDao {
     * 登录操作*/
     public Sysuser selectLogin(
             @Param("login_name")String login_name,@Param("password")String password);
+    /*
+    * 添加一条管理员信息
+    * */
+    public void insertOne(@Param("name")String name, @Param("login_name")String login_name,
+                @Param("password")String password, @Param("phone")String phone,
+                       @Param("email")String email);
 }

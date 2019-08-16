@@ -10,7 +10,7 @@ import java.util.Date;
 public class Sysuser implements Serializable {
     private Integer id;
     private String name;
-    private String loginName;
+    private String login_name;
     private String password;
     private String phone;
     private String email;
@@ -34,12 +34,12 @@ public class Sysuser implements Serializable {
         this.name = name;
     }
 
-    public String getLoginName() {
-        return loginName;
+    public String getLogin_name() {
+        return login_name;
     }
 
-    public void setLoginName(String loginName) {
-        this.loginName = loginName;
+    public void setLogin_name(String login_name) {
+        this.login_name = login_name;
     }
 
     public String getPassword() {

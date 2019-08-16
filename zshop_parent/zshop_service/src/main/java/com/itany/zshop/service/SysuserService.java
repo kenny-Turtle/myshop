@@ -12,4 +12,7 @@ public interface SysuserService {
     public Sysuser findLogin(String login_name,String password);
 
     public List<Sysuser> findAll();
+
+    public void addOne(String name,String login_name,String password,
+                       String phone,String email);
 }
