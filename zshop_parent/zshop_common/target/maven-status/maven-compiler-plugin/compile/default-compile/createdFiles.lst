@@ -2,3 +2,4 @@ com\itany\zshop\exception\ProductTypeExistException.class
 com\itany\zshop\util\ResponseResult.class
 com\itany\zshop\constant\ProductTypeConstant.class
 com\itany\zshop\constant\ResponseStatusConstant.class
+com\itany\zshop\vo\PasswordVo.class

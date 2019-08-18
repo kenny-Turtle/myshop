@@ -1,4 +1,5 @@
 com\itany\zshop\service\SysuserService.class
+com\itany\zshop\service\Impl\PasswordServiceImpl.class
 com\itany\zshop\service\Impl\ProductServiceImpl.class
 com\itany\zshop\service\ProductService.class
 com\itany\zshop\service\CustomerService.class
